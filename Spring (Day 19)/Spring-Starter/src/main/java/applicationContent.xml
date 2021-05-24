@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        
+ <beans>
+        
+        <bean class="com.abhishek.ibm.Spring_Starter.Engineer" id="theEnginner">
+        <property name="name" value="Abhishek"></property>
+        <property name="refCode" value="1029"></property>
+        <property name="Projects">
+        	<list>
+        		<ref bean="project1"/>
+        		<ref bean="project2"/>
+        	</list>
+        </property>
+        </bean>
+        
+        <bean class="com.abhishek.ibm.Spring_Starter.Project" id="project1">
+        <property name="name" value="web Devlopment"></property>
+        <property name="technology">
+        	<list>
+        	<value>javaScript</value>
+        	<value>HTML</value>
+        	<value>CSS</value>
+        	</list>
+        </property>
+        </bean>
+        <bean class="com.abhishek.ibm.Spring_Starter.Project" id="project2">
+        <property name="name" value="Cloud Apps"></property>
+        <property name="technology">
+        	<list>
+        	<value>Azure</value>
+        	<value>javaScript</value>
+        	</list>
+        </property>
+        </bean>
+        
+        
+        
+        
+        <bean class="com.abhishek.ibm.Spring_Starter.Student" id="student">
+        <property name="CollageName" value="NIST"></property>	
+		<property name="Stream" value="IT"></property>
+		</bean>
+        
+        
+</beans>
