@@ -19,6 +19,7 @@ public class serviceClass implements serviceInterface{
 		int accountNumber=generateAccountNumber();
 		AccountDetails ad = new AccountDetails(accountNumber,name,amount);
 		StoreInfo(accountNumber,name,amount);
+		dao.CheckBalance(accountNumber);
 	}
 
 	public void StoreInfo(int accountNumber, String name, double amount) {

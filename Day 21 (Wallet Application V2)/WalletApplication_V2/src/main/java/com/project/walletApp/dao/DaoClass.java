@@ -35,6 +35,7 @@ public class DaoClass implements DaoInterface{
 		}catch(SQLException e) {
 			System.out.println("Issues with the Connectivity: " +e.getMessage());
 		}
+		
 	}
 	// store the details of new account
 	public void storeDetails(int accountNumber,String name, double amount) {
