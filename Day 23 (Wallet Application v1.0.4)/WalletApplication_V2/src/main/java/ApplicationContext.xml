@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+   <context:annotation-config/>
+   <!-- bean definitions go here -->
+
+	 <bean class ="org.springframework.jdbc.datasource.DriverManagerDataSource" id="dataSource">
+   		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
+   		<property name="url" value="jdbc:mysql://localhost:3306/ibm_tranning"></property>
+   		<property name="username" value="root"></property>
+   		<property name="password" value=""></property>
+   	</bean>
+	
+	<bean class="com.project.walletApp.dao.DaoClass" id="DAO"></bean>
+	
+	<context:component-scan base-package="com.project.walletApp.service"></context:component-scan>
+
+</beans>
