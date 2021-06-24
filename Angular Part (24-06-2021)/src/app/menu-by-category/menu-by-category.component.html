@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <section id="dish" class="container">
+
+        <div class="box-container">
+            <div *ngFor="let menu of menus" style="display: inline-block;">
+                <div class="card" style="width: 12rem; ">
+                    <img src="{{menu.url}}" height="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{menu.name}}</h5>
+                      <p class="card-text">{{menu.description}}</p>
+                      <a href="#" class="btn btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+              </div>
+    
+        </div>
+    
+    </section>
+    
+    
+</body>
+</html>

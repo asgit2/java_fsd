@@ -1,0 +1,15 @@
+<h1>Restaurant Details to be Updated by ADMIN</h1>
+
+<form >
+    <input type="text" placeholder="Restaurant Id" name="restaurantId" [(ngModel)]="restaurant.restaurantId">
+    <br><input type="text" name="restaurantName" placeholder="restaurant Name" [(ngModel)]="restaurant.restaurantName">
+    <br><input type="text" name="address" placeholder="address" [(ngModel)]="restaurant.address">
+    <br><input type="text" name="state" placeholder="state" [(ngModel)]="restaurant.state">
+    <br><input type="text" name="city" placeholder="City" [(ngModel)]="restaurant.city">
+    <br><input type="text" name="email" placeholder="Email Address" [(ngModel)]="restaurant.email">
+    <br><input type="text" name="phone" placeholder="phone" [(ngModel)]="restaurant.phone">
+    <br>
+    <button (click)="addNewRestaurant()">Enroll </button>
+</form>
+
+<button (click)= "FeatchAllRestauarnts()">Show all the Restaurant</button>

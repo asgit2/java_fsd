@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <section id="dish" class="container">
+
+        <div class="heading text-center">
+            <h1>The <span>Menu</span></h1>
+        </div>
+        <div class="box-container">
+            <div *ngFor="let REST of rest" style="display: inline-block;">
+                <div class="card" style="width: 12rem; ">
+                    <img src="..." height="100%" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{REST.restaurantName}}</h5>
+                      <p class="card-text">{{REST.city}}</p>
+                      <a href="#" class="btn btn-primary">Menu</a>
+                    </div>
+                  </div>
+              </div>
+    
+        </div>
+    
+    </section>
+    
+    
+</body>
+</html>

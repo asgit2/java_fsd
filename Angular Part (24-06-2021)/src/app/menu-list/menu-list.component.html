@@ -1,0 +1,6 @@
+<app-menu-post-tile 
+*ngFor="let post of menuPost[currentPage]" [post]="post"></app-menu-post-tile>
+
+<app-paginator (pageNumberClick)="updatePage($event)" [pageNumbers]="menuPost.length">
+    
+</app-paginator>
